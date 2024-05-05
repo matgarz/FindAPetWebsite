@@ -1,0 +1,40 @@
+<!-- views/page.ejs -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%- pageTitle %></title>
+    <!-- Include CSS and other meta tags here -->
+</head>
+<body>
+<link  rel="stylesheet" href= "/css/yes.css">
+<%- style %>
+
+<header class="heading">
+    <i id="time"></i> <h1>Adpot-An-Animal            <a href="/"><img src="imgs/adopt.png" width=100 alt="happy face"></a></h1>
+    
+  </header>
+  
+  <div class="navbar"><strong>
+    <a href="/" id="homelink">Home</a>
+    <a href="/login" id="loginlink">Log In</a>
+    <a href="/findpet" id="findlink">Find a Dog/Cat</a>
+    <a href="/dogcare" id="dogcarelink">Dog Care</a>
+    <a href="/catcare" id="catcarelink">Cat Care</a>
+    <a href="/give" id="givelink">Give a Pet</a>
+    <a href="/contactus" id="contactlink">Contact Us</a>
+    
+  </strong>
+  </div>
+  <div class="content">
+    <%- content %>
+  </div>
+  <footer>
+    <p>Click here to read our <a href="/privacy">Privacy/Disclaimer Statement</a></p>  
+  </footer>
+<script src="js/date.js"></script>
+<%- script %>
+</body>
+</html>
